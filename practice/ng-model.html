@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src = 'http://code.angularjs.org/angular-1.0.1.min.js'></script>
+	</head>
+	<body>
+		input:<input type='text' ng-model='name' placeholder='AngularJs'>
+		<hr>
+		hello {{name||'World'}}!
+	</body>
+</html>
+
+<!-- 
+双向数据绑定概念：
+	输入框的任何修改都会立即反映到模型变量(一个方向)，模型变量的任何更改都胡立即反映到问候语文本中。
+  -->
+<!-- 
+解析：
+	文本输入指令<input ng-model="yourname" />绑定到一个叫yourname的模型变量。
+	不需要为该应用另外注册一个事件侦听器或添加事件处理程序!
+ -->
